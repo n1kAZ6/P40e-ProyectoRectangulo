@@ -31,7 +31,7 @@ namespace P40e_ProyectoRectangulo
         public int Area => ladoBase * ladoLateral;
 
         //Métodos
-        public string RectanguloAString() => String.Format("\t{0}\t{1}\t{2}\t\t{3}\t{4}",nombre,ladoBase,ladoLateral,Perimetro,Area);
+        public string RectanguloAString() => String.Format("\t{0}\t{1}\t{2}\t\t{3}\t{4}",Util.CuadraTexto(nombre,12),ladoBase,ladoLateral,Perimetro,Area);
 
 
 

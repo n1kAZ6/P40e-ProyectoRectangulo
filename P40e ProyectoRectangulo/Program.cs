@@ -38,18 +38,21 @@ namespace P40e_ProyectoRectangulo
             Console.Write("\n\tIntroduce el nuevo nombre del rectángulo: ");
             string nuevoNombre = Console.ReadLine();
 
-            if (nuevoNombre == String.Empty)
-                Console.WriteLine("** Error, el nombre del rectángulo no puede estar en blanco. **");
+            
             while (nuevoNombre == String.Empty)
             {
+                if (nuevoNombre == String.Empty)
+                    Console.WriteLine("** Error, el nombre del rectángulo no puede estar en blanco. **");
+
                 Console.Write("\n\tIntroduce el nuevo nombre del rectángulo: ");
                 nuevoNombre = Console.ReadLine();
             }
 
-            if (nuevoNombre.Length > 8)
-                Console.WriteLine("** Error, el nombre del rectángulo no puede tener mas de 8 caracteres. **");
             while (nuevoNombre.Length > 8)
             {
+                if (nuevoNombre.Length > 8)
+                    Console.WriteLine("** Error, el nombre del rectángulo no puede tener mas de 8 caracteres. **");
+
                 Console.Write("\n\tIntroduce el nuevo nombre del rectángulo: ");
                 nuevoNombre = Console.ReadLine();
             }

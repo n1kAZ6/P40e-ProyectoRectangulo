@@ -49,7 +49,7 @@ namespace P40e_ProyectoRectangulo
             return num;
 
         }
-        public string CuadraTexto(string texto, int numCaracteres)
+        public static string CuadraTexto(string texto, int numCaracteres)
         {
             if(texto.Length>numCaracteres)
                 return texto.Substring(0,numCaracteres);
